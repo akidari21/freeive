@@ -1,0 +1,189 @@
+
+
+
+
+.logo {
+    position: absolute;
+    width: 80px;
+}
+.logo img {
+    width: 100%;
+}
+
+.nav {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    right: 40px;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li {
+    display: inline-block;
+}
+.nav a {
+    display: inline-block;
+    padding: 14px auto 10px auto;
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav a
+
+
+.pannel-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.pannel-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.pannel-3 {
+    width: 100%;
+    height: 100%;
+}
+
+.pannel-4 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Starfield */
+.starfield { 
+    height:100%; 
+    left:0; 
+    position:absolute; 
+    top:0; 
+    width:100%; 
+    z-index:-1; 
+    opacity: .7
+}
+
+
+/* Parallax */
+body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: url(../img/bg_stars.jpg) no-repeat !important;
+}
+
+#particles-js, #parallax, .layer, .some-space, .some-more-space {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* #particles-js {
+    opacity: 0.6;
+} */
+
+ #parallax h1 {
+    color: white;
+    font-size: 5em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: none !important;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+}
+
+ #parallax a {
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    letter-spacing: 0.05em;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    text-decoration: none;
+    /*transition: all 200ms ease; */
+    padding: 10px 15px;
+    opacity: .8;
+}
+ #parallax a:hover {
+    background: white;
+    color: black;
+}
+
+.some-space {
+    animation: rotate 18s 0.5s infinite linear reverse;
+    -webkit-animation: rotate 18s 0.5s infinite linear reverse;
+}
+
+.some-more-space {
+    animation: rotate 15s 0.1s infinite linear;
+    -webkit-animation: rotate 15s 0.1s infinite linear;
+}
+/* 
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+                transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+                transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+                transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+                transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+    }
+} */
+
+
+/* Perspective */
+.some-space {
+    position: absolute;
+    top:45%; left:50%;
+    width:400px; height:130px;
+    margin: -65px 0 0 -200px;
+    perspective: 800px;
+}
+.some-more-space {
+    position: absolute;
+    top:58%; left:49%;
+    width:60px; height:40px;
+    margin: -20px 0 0 -30px;
+    perspective: 600px;    
+}
+.pspt {
+    position: absolute;
+    padding: 10px 16px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform-style: preserve-3d;    
+    background: rgba(1, 100, 167, 0.5);
+}
+
+/* .popup:before {
+    content: '';
+    position: absolute;
+    left:5%; top:5%;
+    width:90%; height:90%;
+    border-radius: inherit;
+    transform: translateZ(-100px);
+} */
